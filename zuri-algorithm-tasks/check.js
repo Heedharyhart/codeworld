@@ -14,6 +14,9 @@ function checkYuGiOh(n){
       } else if (currentValue % 2 === 0 && currentValue % 5 == 0) {
         store = "yu-oh";
         result.push(store);
+      } else if (currentValue % 3 === 0 && currentValue % 5 == 0) {
+        store = "gi-oh";
+        result.push(store);
       } else if (currentValue % 2 === 0 && currentValue % 3 == 0) {
         store = "yu-gi";
         result.push(store);
@@ -33,4 +36,4 @@ function checkYuGiOh(n){
 return result
 }
 
-console.log(checkYuGiOh(15));
+console.log(checkYuGiOh(30));
